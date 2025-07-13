@@ -29,7 +29,7 @@ body.expanded-background {
 /* APP CONTAINER */
 .app-container {
 	max-width: 600px;
-
+	flex: 1;
 	margin: 5rem auto;
 	padding: 1.5rem;
 	text-align: center;
