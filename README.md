@@ -1,104 +1,55 @@
-<!-- @format -->
 
-# 🌤️ Weather Forecast App
 
-A sleek and interactive weather forecast application built with **React**, providing users with real-time weather updates, a 5-day forecast, and an optional hourly breakdown—powered by the WeatherAPI.
+# 🌤️ Weather Forecast App – Tech Assessment 1
 
----
+This project is my submission for **Tech Assessment 1** as part of the application for the **AI Engineer Intern position at Product Manager Accelerator (PMA)**.
 
-## ✨ Features
-
-### 🌍 Location-Based Search
-
-- 🔍 Search for any city or region.
-- 📍 Use your current location via geolocation for instant forecasts.
-
-### 📦 Real-Time Weather Details
-
-- 🌡️ Temperature (actual and feels-like)
-- 💧 Humidity
-- ☁️ Cloud cover
-- 🌬️ Wind speed and direction
-- ☀️ UV index
-
-### 📅 5-Day Forecast
-
-- Visually rich cards showing:
-  - Max & Min Temperatures
-  - Humidity
-  - Rain chance
-  - Wind speed
-  - Weather conditions with icons
-
-### 🕒 Hourly Forecast (Toggle)
-
-- Toggle to display hourly weather for today.
-- Displays:
-  - Hourly temperature
-  - Weather condition icons
-  - Timestamp
-
-### 🗺️ Interactive Map View
-
-- Embedded **Google Maps** preview of the forecast location.
-
-### 👩‍💻 About Sections
-
-- Buttons in the footer linking to:
-  - **About Me** (Developer Info)
-  - **About PMA** (Project/Motivation Overview)
-
-### 📜 History (UI Button in place)
-
-- Placeholder for future implementation of search history or previous forecasts.
-
-### 🎨 Responsive & Accessible Design
-
-- Clean, modern interface with soft gradients and dark card elements.
-- Fully responsive layout for desktop and mobile.
+It’s a clean, responsive, and real-time weather forecasting app that allows users to search for weather conditions in any location — by city, town, landmark, or zip code — and provides useful, visual weather data based on their query.
 
 ---
 
-## 🚀 Getting Started
+## ✅ What This App Can Do
 
-### Prerequisites
+* 🔍 **Search for weather** by any location — zip, city, landmark, or coordinates.
+* 📍 Option to **use current GPS location** to get weather instantly.
+* 🌡️ Displays **current weather** conditions:
 
-- Node.js `>= 14`
-- WeatherAPI key ([Get one here](https://www.weatherapi.com/))
-
-### Setup
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/weather-forecast-app.git
-   cd weather-forecast-app
-   ```
-
-````
-
-2. **Install dependencies**
-
-   ```bash
-   npm install
-   ```
-
-3. **Add your API Key**
-
-   Create a `.env` file in the root:
-
-   ```bash
-   VITE_WEATHER_API_KEY=your_api_key_here
-   ```
-
-4. **Start the development server**
-
-   ```bash
-   npm run dev
-   ```
+  * Temperature
+  * Feels-like
+  * Humidity
+  * UV Index
+  * Wind Speed
+  * Cloud Cover
+* 📅 Includes a **5-day forecast** with date, temperature, and conditions.
+* 🕒 Option to view **hourly forecast** (toggle button).
+* 🗺️ Embeds a **Google Map** for the searched location.
+* 🎨 Built with responsive UI for both desktop and mobile users.
 
 ---
 
-## 🧠 Project Structure
+## 💡 Why This App?
+
+The goal of this assessment was to simulate a real-world product where users can check weather across locations and receive relevant forecast information, not just for today — but the days ahead. To make it helpful and user-centric:
+
+* I enabled GPS-based search so users can check weather wherever they are.
+* Added a toggle for hourly forecasts, in case someone is planning something time-sensitive.
+* Used WeatherAPI to ensure **live**, **accurate**, and **non-static** data.
+* Added visual elements like emojis and cards for clearer UX.
+* Embedded Google Maps so users can **visualize the area** they're looking up.
+
+---
+
+## 🔧 Technologies Used
+
+| Layer      | Tools & Frameworks                                 |
+| ---------- | -------------------------------------------------- |
+| Frontend   | React (Vite), Tailwind CSS, React Router           |
+| APIs       | WeatherAPI, Browser Geolocation, Google Maps Embed |
+| Deployment | Vercel (Frontend Hosting)                          |
+
+---
+
+## 📁 Folder Structure
 
 ```
 src/
@@ -108,31 +59,32 @@ src/
 │   ├── ForecastList.jsx
 │   ├── HourlyForecast.jsx
 │   ├── MapView.jsx
-│   ├── InfoButton.jsx
-│   └── Footer.jsx
-├── services/
-│   └── weatherService.js
 ├── App.jsx
-└── App.css
+├── App.css
+└── main.jsx
 ```
 
 ---
 
-## 🛠️ Technologies Used
+## 🎯 Assessment 1 Requirements: ✅ Covered
 
-* ⚛️ React (Vite)
-* 📡 WeatherAPI
-* 🗺️ Google Maps Embed
-* 📦 CSS Modules / Vanilla CSS
-* 🧪 DevTools for debugging
+| Requirement                                   | Status |
+| --------------------------------------------- | ------ |
+| Search by city, zip, coordinates, landmark    | ✅      |
+| Display current weather with useful info      | ✅      |
+| Use live API (no static data)                 | ✅      |
+| Add 5-day forecast                            | ✅      |
+| Show weather based on user’s current location | ✅      |
+| Use icons or visual styling                   | ✅      |
+| Responsive and user-friendly UI               | ✅      |
 
 ---
 
-## 🙌 Author
+## 🙋‍♀️ About Me
 
 **Anusha Shiva Kumar**
-Frontend Developer passionate about clean design, responsive layouts, and intuitive UI/UX.
-\[LinkedIn] · \[GitHub] · \[Portfolio]
+
+Graduate Research Assistant • Passionate about Data Science & Full Stack Development
+[LinkedIn](https://linkedin.com/in/anusha-shiva-kumar) · [GitHub](https://github.com/your-username)
 
 ---
-````
